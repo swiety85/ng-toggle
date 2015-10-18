@@ -1,0 +1,51 @@
+<html ng-app="app">
+    <head>
+        <!-- bower:css -->
+        <!-- endbower -->
+
+        <!-- inject:css -->
+        <!-- endinject -->
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <header style="background-color: #f0f0f0;margin:0;">
+            <h1 style="padding:0;margin:0;">Example: ngToggle</h1>
+        </header>
+
+
+        <div ng-controller="ExampleCtrl">
+
+            <h2>Simple single toggle active</h2>
+            <div ng-toggle class="toggle-active-container">
+                <button ng-click="toggleActive()" class="toggle-active-button">Show item</button>
+                <div ng-toggle-show class="toggle-active-dropdown">
+                    Toggle show content
+                </div>
+            </div>
+            <br/>
+            <br/>
+
+            <h2>Toggle active with many toggle show areas inside</h2>
+            <div ng-toggle class="toggle-active-container">
+                <button ng-click="toggleActive('item1')" class="toggle-active-button">Show item 1</button>
+                <button ng-click="toggleActive('item2')" class="toggle-active-button">Show item 2</button>
+
+                <div ng-toggle-show="item1" class="toggle-active-dropdown">
+                    Toggle show content - item 1
+                </div>
+                <div ng-toggle-show="item2" class="toggle-active-dropdown">
+                    Toggle show content - item 2
+                </div>
+            </div>
+
+        </div>
+        <!-- bower:js -->
+        <script src="../bower_components/angular/angular.js"></script>
+        <!-- endbower -->
+
+        <!-- inject:js -->
+        <script src="../src/ngToggle.js"></script>
+        <!-- endinject -->
+        <script src="app.js"></script>
+    </body>
+</html>

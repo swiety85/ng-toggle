@@ -1,0 +1,14 @@
+.toggle-active-container {
+    display: inline-block;
+}
+
+.toggle-active-dropdown {
+    position: absolute;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+.toggle-active-button {
+    display: inline-block;
+    padding: 5px;
+}
